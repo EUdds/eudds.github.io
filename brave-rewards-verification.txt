@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: ericudlis.com
-Token: db9b91b00ad8bdeb4ace9e893a7eaa237937ed771343fa2632c970659d978bc3
