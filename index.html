@@ -19,7 +19,7 @@
   <title>Eric Udlis - Resume</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
@@ -103,6 +103,21 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Research Computing Facilitation Assistant</h3>
+            <div class="subheading mb-3">Wisconsin Center for High Throughput Computing</div>
+            <p>Contribute to recording, data entry, and analytics of various metrics. Collaborate
+               with CHTC staff to compose and distribute email communications to CHTC users. Assist 
+               in the development and execution of outreach materials, learning materials, and training 
+               event logistics. Troubleshoot, test, and maintain CHTC website and databases to ensure strong 
+               optimization and functionality.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2018 - Present</span>
+          </div>
+        </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
@@ -257,65 +272,45 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
       <div class="w-100">
         <h2 class="mb-5">Projects</h2>
-        <p>In my free time I like to work on personal projects for both myself and organizations I am apart of, these are my most notable ones.</p>
-        <div class="card-group">
-          <div class="card">
-            <div class="card-header">
-              Easy Eval
-            </div>
+        <p class="lead mb-5">In my free time, I like to work on various software projects, these are my most notable ones
+          <br>
+          Click on any card to go to the GitHub project page (if applicable). All my projects and contributions to open source software can be found on my GitHub Page <a href="http://github.com/EUdds">here</a>!
+        </p>
+        <div class="card-deck">
+          <div class="card make-it-slow">
+            <img class="card-img-top" width="100%" height="200px" src="img/EECap.png">
             <div class="card-body">
-              Easy Eval is a web application I made for the business department of Fond du Lac High School. It serves
-              as an business way to for students to rate their group members on a group project to ensure fair
-              grading.
-              <br>
-              This app allows teachers to create completely custom assignments defining their own standards and grading
-              scale. Teachers create a project and give students a pin number and they are ready to go. No accounts
-              necessary. Then once all the results are in, teachers can export their results in several formats for easy
-              importing into their grading program.
-              <hr>
-              <img class="img-thumbnail" src="img/EECap.png">
+              <h3 class="card-title">Easy Eval</h5>
+              Developed for the Fond du Lac High School Busisness Department, Easy Eval is an efficient way for students
+              to rate group member contribution to group projects to ensure fair grading.
+              <a href="https://github.com/EUdds/EasyEval" class="stretched-link"></a>
             </div>
             <div class="card-footer">
               Technologies: Node.js, MongoDB, Nginx Webserver, Handlebars
             </div>
           </div>
-          <div class="card">
-            <div class="card-header">
-              Magic Mirror
-            </div>
+          <div class="card make-it-slow">
+            <img class="card-img-top" height="200px" src="https://magicmirror.builders/img/explode.jpg">
             <div class="card-body">
-              This Magic Mirror was based of the design from <a href="https://github.com/MichMich/MagicMirror">MichMich
+              <h3 class="card-title">Magic Mirror</h3>
+              Based off of the design from <a href="https://github.com/MichMich/MagicMirror">MichMich
                 on GitHub</a> my particular magic mirror was created using an old HP monitor and a one-way mirror placed
-              in front of it.
-              <br>
-              The main process is running on a Raspberry Pi 3 using Electron to host a webpage. There are several
-              modules, some of which created by contributors on GitHub. I created a couple modules to interface with
-              Amazon Alexa, and control a strip of WS2812 LEDs over a Web Server. The mirror hosts a web page that
-              serves as a remote control for easy configuration.
-              <br>
-              <br>
-              <hr>
-              <img class="img-thumbnail" src="https://magicmirror.builders/img/explode.jpg">
+              in front of it. Under the hood, it runs a Raspberry Pi 3 using electrion to host a webpage and utilizing
+              modules written in javascrip
             </div>
             <div class="card-footer">
               Technologies: Node.js, Electron, Raspberry Pi, Arduino, Express.js
             </div>
           </div>
-          <div class="card">
-            <div class="card-header">
-              Badgerloop Bill Of Materials/ Finance Tracking
-            </div>
+          <div class="card make-it-slow">
+            <img class="card-img-top" height="200px"src="img/myBadgerloop.jpg">
             <div class="card-body">
-              This web-app is designed for the UW - Madison Hyperloop Competition Team, Badgerloop. This web-app serves as
-              the purchase requesting, approval, and ordering hub for almost $50,000 worth of purchases a year. It
-              allows members to sign in via Slack and all permissions are assigned from the single source. All requests
-              are then posted in a slack channel with buttons that interface directly with the web-app.
-              <br>
-              The web-app is being hosted on an Apache WebServer running on Ubuntu. Using a custom Slack App to interface
-              with our workspace.
-              <br>
-              <hr>
-              <img class="img-thumbnail" src="img/myBadgerloop.jpg">
+              <h3 class="card-title">Badgerloop Bill of Materials</h3>
+              Designed for the UW - Madison Hyperloop Competition Team, Badgerloop, this web-app serves as
+              the purchase requesting, approval, and ordering hub for almost $50,000 worth of purchases a year. On the back
+              end it runs a written from scratch express server using Slack OAuth authentication and SlackBot integration to
+              deliver a front-end written in handlebars
+              <a href="https://github.com/badgerloop-software/BOM-Webapp" class="stretched-link"></a>
             </div>
             <div class="card-footer">
               Technologies: Node.js, Express.js, Apache WebServer, Slack Authentication, Slack Integration, Handlebars
@@ -323,38 +318,27 @@
           </div>
         </div>
         <hr>
-        <div class="card-group">
-            <div class="card">
-                <div class="card-header">
-                  Badgerloop Pod Dashboard
-                </div>
+        <div class="card-deck">
+            <div class="card make-it-slow">
+              <img class="card-img-top" height="300px" src="img/dashboard.jpg">
                 <div class="card-body">
-                  This application is designed for the UW - Madison Hyperloop Competition Team, Badgerloop. This Electron app serves as
-                  the Pod Operator's Dashboard It receives and displays telemetry data from the pod in both tables and graphs. Allows the user to control the internal state machine. Send commands to the pod through a GUI or an integrated terminal. Export run data into Excel or Matlab. Or re-import them back into the dashboard.
-                  <br>
-                  The application is written as a webpage hosted with Electron. All pod communications are through TCP and UDP. All responsive applications are through modifying the DOM. The dashboard is updated automatically based on a single JSON file shared between the pod's onboard BeagleBone Blacks and the dashboard computer.
-                  <br>
-                  <hr>
-                  <img class="img-thumbnail" src="img/dashboard.jpg">
+                  <h3 class="card-title">Badgerloop Pod Dashboard</h3>
+                  Designed for the UW - Madison Hyperloop Competition Team, Badgerloop. This Electron app serves as the Pod 
+                  Operator's Dashboard It receives and displays telemetry data from the pod in both tables and graphs. Allows 
+                  the user to control the internal state machine. Send commands to the pod through a GUI or an integrated terminal. 
+                  Export run data into Excel or Matlab. Or re-import them back into the dashboard.
+                  <a href="https://github.com/badgerloop-software/pod-dashboard" class="stretched-link"></a>
                 </div>
                 <div class="card-footer">
                   Technologies: Node.js, Electron, TCP and UDP networking
                 </div>
               </div>
-              <div class="card">
-                  <div class="card-header">
-                    Badgerloop Hardware in the Loop Testing
-                  </div>
+              <div class="card make-it-slow">
+                  <img class="card-img-top" height="300" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.huwZ5L6CpbClkK6M4HZAGgHaEK%26pid%3DApi&f=1">
                   <div class="card-body">
-                    This testing rig is set up to get hardware to the programmers as fast as possible. We are using an automated Continuous Integration/ Continuous Delivery (CI/CD) pipeline run through a locally hosted GitLabs Server. This rig will automatically build our development repository onto our onboard computers, 2 BeagleBone Blacks. Turn on a remote power supply over SCPI and run the specified tests.
-                    <br>
-                    These tests will run on updates to the <em>master</em> branch on our development repository. Then report the results of the test over Box file sharing.
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <hr>
-                    <img class="img-thumbnail" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.huwZ5L6CpbClkK6M4HZAGgHaEK%26pid%3DApi&f=1">
+                    <h3>Badgerloop Hardware in the Loop Testing Rig</h3>
+                    Also developed during my role as Software lead at Badgerloop, this testing rig is designed to get hardware tests to the programmers as fast as possible. Using a <abbr title="Continous Integration / Continous Deployment">CI/CD</abbr> pipeline on a locally hosted GitLabs server, this rig will automatically build our development repository onto our onboard computers, 2 BeagleBone Blacks. Turn on a remote power supply over SCPI and run the specified tests.
+                    These tests will run on updates to the development repository, then report the results over Box file sharing.
                   </div>
                   <div class="card-footer">
                     Technologies: Gitlab-CI, ARM Cross Compiling, C, C++
