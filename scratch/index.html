@@ -17,6 +17,11 @@
 
 <script>
 function generateCode() {
-    document.getElementById('box').value = ((Math.random()*1e64).toString(36));
+    let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let code = "";
+    for (let i=0; i < 128; i++) {
+        code += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    document.getElementById('box').value = code;
 }
 </script>
